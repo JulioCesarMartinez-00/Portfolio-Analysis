@@ -4,10 +4,9 @@
 
 library('Sim.DiffProc')
 library('dplyr')
-library('tidyr')
+library('tidyverse')
 library('quadprog')
 library('ggplot2')
-library('ggforce')
 
 #*******************************************************************************
 #  I .- Function to estimate returns
