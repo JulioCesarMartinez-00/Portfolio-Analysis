@@ -89,13 +89,13 @@ random_weights <- function(n_assets){
   weights <- c()
   for(i in 1:(n_assets-1)){
     if(i == 1){
-      weights[i] <- sample(1000,1,replace = TRUE)
+      weights[i] <- sample(10000,1,replace = TRUE)
     } else{
-      weights[i] <- sample((1000-sum(weights)),1,replace = TRUE)
+      weights[i] <- sample((10000-sum(weights)),1,replace = TRUE)
     }
   }
-  weights[n_assets] <- 1000 - sum(weights)
-  return(sample(weights,n_assets,replace=FALSE)/1000)
+  weights[n_assets] <- 10000 - sum(weights)
+  return(sample(weights,n_assets,replace=FALSE)/10000)
 } 
 
 #*******************************************************************************
