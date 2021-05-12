@@ -1,6 +1,6 @@
 
 import sys
-'''!{sys.executable} -m pip install yfinance'''
+!{sys.executable} -m pip install yfinance
 import yfinance as yf
 import numpy as np
 import pandas as pd
@@ -33,4 +33,3 @@ def getData(assets,start,end):
             continue
 
     return df_assets_close
-##############################################################################################################################
