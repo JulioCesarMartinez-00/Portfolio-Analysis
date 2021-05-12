@@ -63,7 +63,7 @@ getPortfolioReturns <-function(returns,weights){
 #*******************************************************************************
 #  IV. Selecting the top_n stocks
 
-top_n <- function(returns,top=top.k){
+top_n <- function(returns,top=10){
   df_stat <<- returns %>% 
     gather(key='asset',value='valor',-Fecha) %>%
     group_by(asset) %>%
